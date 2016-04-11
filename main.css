@@ -144,6 +144,7 @@ input {
 #slide3:checked ~ #slides .inner { margin-left:-200%; }
 #slide4:checked ~ #slides .inner { margin-left:-300%; }
 #slide5:checked ~ #slides .inner { margin-left:-400%; }
+#slide6:checked ~ #slides .inner { margin-left:-500%; }
 
 
 #overflow {
@@ -156,12 +157,12 @@ article img {
 }
 
 #slides .inner {
-	width: 500%;
+	width: 600%;
 	line-height: 0;
 }
 
 #slides article {
-	width: 20%;
+	width: 16.66%;
 	float: left;
 }
 
@@ -210,7 +211,8 @@ article img {
 #slide2:checked ~ #controls label:nth-child(3), 
 #slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(5), 
-#slide5:checked ~ #controls label:nth-child(1) {
+#slide5:checked ~ #controls label:nth-child(6),
+#slide6:checked ~ #controls label:nth-child(1) {
 	background: url('images/next.png') no-repeat;
 	float: right;
 	margin: 0 -70px 0 0;
@@ -218,11 +220,12 @@ article img {
 }
 
 
-#slide1:checked ~ #controls label:nth-child(5),
+#slide1:checked ~ #controls label:nth-child(6),
 #slide2:checked ~ #controls label:nth-child(1),
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3),
-#slide5:checked ~ #controls label:nth-child(4) {
+#slide5:checked ~ #controls label:nth-child(4),
+#slide6:checked ~ #controls label:nth-child(5) {
 	background: url('images/prev.png') no-repeat;
 	float: left;
 	margin: 0 0 0 -70px;
@@ -233,7 +236,8 @@ article img {
 #slide2:checked ~ #active label:nth-child(2),
 #slide3:checked ~ #active label:nth-child(3),
 #slide4:checked ~ #active label:nth-child(4),
-#slide5:checked ~ #active label:nth-child(5) {
+#slide5:checked ~ #active label:nth-child(5),
+#slide6:checked ~ #active label:nth-child(6) {
 	background: #333;
 	border-color: #333 !important;
 }
@@ -317,7 +321,8 @@ article img {
 #slide2:checked ~ #slides article:nth-child(2) .info,
 #slide3:checked ~ #slides article:nth-child(3) .info,
 #slide4:checked ~ #slides article:nth-child(4) .info,
-#slide5:checked ~ #slides article:nth-child(5) .info {
+#slide5:checked ~ #slides article:nth-child(5) .info,
+#slide5:checked ~ #slides article:nth-child(6) .info {
 	opacity: 1;
 	-webkit-transition: all 1s ease-out 0.6s;
 	-moz-transition: all 1s ease-out 0.6s;
